@@ -49,64 +49,51 @@ def handle_disconnect():
             emit('device_unregistered', {'device_id': device_id}, broadcast=True, skip_sid=request.sid)
             logger.info(f"✗ Device unregistered: {device_id}")
 
+
 @socketio.on('register_device')
 def handle_register_device(data):
-    """تسجيل جهاز جديد"""
-    # Render يضع IP المستخدم الحقيقي في هذا الـ Header
-    public_ip = request.headers.get('X-Forwarded-For', request.remote_addr)
-    if ',' in public_ip: # في حال وجود أكثر من IP، نأخذ الأول
-        public_ip = public_ip.split(',')[0]
-
-    device_info = {
-        'device_id': device_id,
-        'device_name': device_name,
-        'port': port,
-        'session_id': request.sid,
-        'public_ip': public_ip, # العنوان الحقيقي هنا
-        'timestamp': datetime.now().isoformat(),
-    }
+    """تسجيل جهاز جديد مع تحديد الـ IP العام"""
     try:
+        # 1. استخراج البيانات من الطلب القادم
         device_id = data.get('device_id')
-        device_name = data.get('device_name')
-        port = data.get('port')
+        device_name = data.get('device_name', 'Unknown Device')
+        port = data.get('port', 25557)
         
-        if not device_id or not device_name:
-            emit('error', {'message': 'Missing device_id or device_name'})
+        if not device_id:
+            logger.error("! Register error: Missing device_id")
+            emit('error', {'message': 'device_id is required'})
             return
+
+        # 2. الحصول على الـ IP الحقيقي من Render
+        # Render يضع IP المستخدم في Header يسمى X-Forwarded-For
+        public_ip = request.headers.get('X-Forwarded-For', request.remote_addr)
+        if public_ip and ',' in public_ip:
+            public_ip = public_ip.split(',')[0].strip()
         
-        # حفظ بيانات الجهاز
+        # 3. تجميع بيانات الجهاز
         device_info = {
             'device_id': device_id,
             'device_name': device_name,
             'port': port,
             'session_id': request.sid,
-            'remote_addr': request.remote_addr,
-            'timestamp': datetime.now().isoformat(),
-            'public_ip': request.remote_addr,
+            'public_ip': public_ip,
+            'timestamp': datetime.now().isoformat()
         }
         
+        # 4. حفظ الجهاز في الذاكرة
         devices[device_id] = device_info
         
-        logger.info(f"✓ Device registered: {device_name} ({device_id}) from {request.remote_addr}")
+        logger.info(f"✓ Device registered: {device_name} ({device_id}) from IP: {public_ip}")
         
-        # إرسال إشعار لجميع الأجهزة
+        # 5. إرسال تأكيد للجهاز وإشعار للبقية
         emit('device_registered', {
             'device': device_info,
             'devices_online': len(devices)
         }, broadcast=True)
         
-        # تسجيل في السجل
-        connections_log.append({
-            'action': 'register',
-            'device_id': device_id,
-            'device_name': device_name,
-            'timestamp': datetime.now().isoformat()
-        })
-        
     except Exception as e:
-        logger.error(f"! Error registering device: {str(e)}")
+        logger.error(f"! Error in register_device: {str(e)}")
         emit('error', {'message': str(e)})
-
 @socketio.on('get_devices')
 def handle_get_devices():
     """الحصول على قائمة الأجهزة المتاحة"""
