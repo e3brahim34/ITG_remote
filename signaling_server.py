@@ -52,6 +52,19 @@ def handle_disconnect():
 @socketio.on('register_device')
 def handle_register_device(data):
     """تسجيل جهاز جديد"""
+    # Render يضع IP المستخدم الحقيقي في هذا الـ Header
+    public_ip = request.headers.get('X-Forwarded-For', request.remote_addr)
+    if ',' in public_ip: # في حال وجود أكثر من IP، نأخذ الأول
+        public_ip = public_ip.split(',')[0]
+
+    device_info = {
+        'device_id': device_id,
+        'device_name': device_name,
+        'port': port,
+        'session_id': request.sid,
+        'public_ip': public_ip, # العنوان الحقيقي هنا
+        'timestamp': datetime.now().isoformat(),
+    }
     try:
         device_id = data.get('device_id')
         device_name = data.get('device_name')
