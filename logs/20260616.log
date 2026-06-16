@@ -1,0 +1,546 @@
+2026-06-16 19:12:27 - __main__ - INFO - Discovery server started on 0.0.0.0:25558
+2026-06-16 19:12:27 - __main__ - INFO - Discovery server is running. Press Ctrl+C to stop.
+2026-06-16 19:12:27 - __main__ - INFO - Server listening on 0.0.0.0:25558
+2026-06-16 19:21:15 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 19:23:29 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 19:23:29 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 19:23:29 - __main__ - INFO - Starting controlled device...
+2026-06-16 19:23:29 - core.discovery - INFO - Device broadcast started
+2026-06-16 19:23:29 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 19:23:29 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 19:24:38 - __main__ - INFO - Controller Device initialized: PC1 (192.168.8.106)
+2026-06-16 19:24:38 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 19:24:38 - __main__ - INFO - Starting controller device...
+2026-06-16 19:24:38 - core.discovery - INFO - Device discovery started
+2026-06-16 19:24:46 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:24:51 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:24:54 - ui.controller_ui - INFO - Refreshing devices...
+2026-06-16 19:24:56 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:24:59 - ui.controller_ui - DEBUG - Key pressed: Enter
+2026-06-16 19:24:59 - __main__ - WARNING - Not connected
+2026-06-16 19:25:01 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:25:06 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:25:11 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:25:16 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:25:21 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:25:26 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:25:31 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:25:36 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:25:41 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:25:46 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:25:51 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:25:56 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:26:01 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:26:06 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:26:11 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:26:16 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:26:21 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:26:26 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:26:31 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:26:36 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:26:41 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:26:46 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:26:51 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:28:23 - __main__ - INFO - Stopping server...
+2026-06-16 19:28:23 - __main__ - INFO - Discovery server stopped
+2026-06-16 19:32:19 - __main__ - INFO - Discovery server started on 0.0.0.0:25558
+2026-06-16 19:32:19 - __main__ - INFO - Discovery server is running. Press Ctrl+C to stop.
+2026-06-16 19:32:19 - __main__ - INFO - Server listening on 0.0.0.0:25558
+2026-06-16 19:32:26 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 19:32:26 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 19:32:26 - __main__ - INFO - Starting controlled device...
+2026-06-16 19:32:26 - core.discovery - INFO - Device broadcast started
+2026-06-16 19:32:26 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 19:32:26 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 19:44:20 - ui.controlled_ui - INFO - Stopping screen sharing...
+2026-06-16 19:44:22 - ui.controlled_ui - INFO - Stopping screen sharing...
+2026-06-16 19:44:39 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 19:44:40 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 19:44:40 - __main__ - INFO - Starting controlled device...
+2026-06-16 19:44:40 - core.discovery - INFO - Device broadcast started
+2026-06-16 19:44:40 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 19:44:40 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 19:55:48 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 19:55:48 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 19:55:48 - __main__ - INFO - Starting controlled device...
+2026-06-16 19:55:48 - core.discovery - INFO - Device broadcast started
+2026-06-16 19:55:48 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 19:55:48 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 19:55:54 - __main__ - INFO - Controller Device initialized: PC1 (192.168.8.106)
+2026-06-16 19:55:54 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 19:55:54 - __main__ - INFO - Starting controller device...
+2026-06-16 19:55:54 - core.discovery - INFO - Device discovery started
+2026-06-16 19:56:01 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 19:56:54 - __main__ - INFO - Stopping server...
+2026-06-16 19:56:54 - __main__ - INFO - Discovery server stopped
+2026-06-16 19:56:56 - __main__ - INFO - Discovery server started on 0.0.0.0:25558
+2026-06-16 19:56:56 - __main__ - INFO - Discovery server is running. Press Ctrl+C to stop.
+2026-06-16 19:56:56 - __main__ - INFO - Server listening on 0.0.0.0:25558
+2026-06-16 19:57:09 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 19:57:10 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 19:57:10 - __main__ - INFO - Starting controlled device...
+2026-06-16 19:57:10 - core.discovery - INFO - Device broadcast started
+2026-06-16 19:57:10 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 19:57:10 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 20:29:12 - __main__ - INFO - Stopping server...
+2026-06-16 20:29:12 - __main__ - INFO - Discovery server stopped
+2026-06-16 20:29:14 - __main__ - INFO - Discovery server started on 0.0.0.0:25558
+2026-06-16 20:29:14 - __main__ - INFO - Discovery server is running. Press Ctrl+C to stop.
+2026-06-16 20:29:14 - __main__ - INFO - Server listening on 0.0.0.0:25558
+2026-06-16 20:29:30 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 20:29:31 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 20:29:31 - __main__ - INFO - Starting controlled device...
+2026-06-16 20:29:31 - core.discovery - INFO - Device broadcast started
+2026-06-16 20:29:31 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 20:29:31 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 20:33:14 - __main__ - INFO - Controller Device initialized: PC1 (192.168.8.106)
+2026-06-16 20:33:14 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 20:33:14 - __main__ - INFO - Starting controller device...
+2026-06-16 20:33:14 - core.discovery - INFO - Device discovery started
+2026-06-16 20:33:21 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:33:26 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:33:31 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:33:36 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:33:41 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:33:46 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:33:51 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:33:56 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:34:01 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:34:06 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:34:11 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:34:16 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:34:21 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:34:26 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:34:31 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:34:36 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:34:41 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:34:46 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:34:51 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:35:00 - __main__ - INFO - Controller Device initialized: PC1 (192.168.8.106)
+2026-06-16 20:35:00 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 20:35:00 - __main__ - INFO - Starting controller device...
+2026-06-16 20:35:00 - core.discovery - INFO - Device discovery started
+2026-06-16 20:35:06 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:35:11 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:35:16 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:35:21 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:35:26 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:35:31 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:35:36 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:35:41 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:35:46 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:35:51 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:35:56 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:36:01 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:36:06 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:36:11 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:36:16 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:36:21 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:36:26 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:36:31 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:36:36 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:36:41 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:36:46 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:36:51 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:36:56 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:37:01 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:37:06 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:37:11 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:37:16 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:37:21 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:37:26 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:37:31 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:37:36 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:37:41 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:37:46 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:37:51 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:37:56 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:38:01 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:38:06 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:38:11 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:38:16 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:38:21 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:38:26 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:38:31 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:38:36 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:38:41 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:38:46 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:38:51 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:38:56 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:39:01 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:39:06 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:39:11 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:39:16 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:39:21 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:39:26 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:39:31 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:39:36 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:39:41 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:39:46 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:39:51 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:39:56 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:40:01 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:40:06 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:40:11 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:40:16 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:40:21 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:40:26 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:40:31 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:40:36 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:40:41 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:40:46 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:40:51 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:40:56 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:41:01 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:41:06 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:41:11 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:41:16 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:41:21 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:41:26 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:41:31 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:41:36 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:41:41 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:41:46 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:41:51 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:41:56 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:42:01 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:42:06 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:42:11 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:42:16 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:42:21 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:42:26 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:42:32 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:42:36 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:42:42 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:42:46 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:42:51 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:42:56 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:43:01 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:45:43 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 20:45:44 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 20:45:44 - __main__ - INFO - Starting controlled device...
+2026-06-16 20:45:44 - core.discovery - INFO - Device broadcast started
+2026-06-16 20:45:44 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 20:45:44 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 20:52:44 - __main__ - INFO - Stopping server...
+2026-06-16 20:52:44 - __main__ - INFO - Discovery server stopped
+2026-06-16 20:52:46 - __main__ - INFO - Discovery server started on 0.0.0.0:25558
+2026-06-16 20:52:46 - __main__ - INFO - Discovery server is running. Press Ctrl+C to stop.
+2026-06-16 20:52:46 - __main__ - INFO - Server listening on 0.0.0.0:25558
+2026-06-16 20:52:53 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 20:52:54 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 20:52:54 - __main__ - INFO - Starting controlled device...
+2026-06-16 20:52:54 - core.discovery - INFO - Device broadcast started
+2026-06-16 20:52:54 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 20:52:54 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 20:59:22 - __main__ - INFO - Controller Device initialized: PC1 (192.168.8.106)
+2026-06-16 20:59:22 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 20:59:22 - __main__ - INFO - Starting controller device...
+2026-06-16 20:59:22 - core.discovery - INFO - Device discovery started
+2026-06-16 20:59:28 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:59:33 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:59:38 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 20:59:43 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 21:04:51 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 21:04:51 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 21:04:51 - __main__ - INFO - Starting controlled device...
+2026-06-16 21:04:51 - core.discovery - INFO - Device broadcast started
+2026-06-16 21:04:51 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 21:04:51 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 21:19:31 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 21:19:31 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 21:19:31 - __main__ - INFO - Starting controlled device...
+2026-06-16 21:19:31 - core.discovery - INFO - Device broadcast started
+2026-06-16 21:19:31 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 21:19:31 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 21:31:48 - core.connection - INFO - Connection accepted from ('192.168.8.170', 10405)
+2026-06-16 21:31:48 - __main__ - INFO - New connection from 192.168.8.170:10405
+2026-06-16 21:31:48 - database.db_manager - INFO - Connection logged: PC1 (b469215c1a6f)
+2026-06-16 21:31:48 - ui.controlled_ui - INFO - Connection added: PC1
+2026-06-16 21:31:48 - core.screen_capture - INFO - Screen capture started
+2026-06-16 21:32:04 - core.connection - INFO - Connection accepted from ('192.168.8.170', 10406)
+2026-06-16 21:32:04 - __main__ - INFO - New connection from 192.168.8.170:10406
+2026-06-16 21:32:05 - database.db_manager - INFO - Connection logged: PC1 (b469215c1a6f)
+2026-06-16 21:32:05 - ui.controlled_ui - INFO - Connection added: PC1
+2026-06-16 21:37:38 - core.connection - ERROR - Receive error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-16 21:37:38 - core.connection - ERROR - Receive error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-16 21:38:08 - core.connection - INFO - Connection accepted from ('192.168.8.170', 10426)
+2026-06-16 21:38:08 - __main__ - INFO - New connection from 192.168.8.170:10426
+2026-06-16 21:38:08 - database.db_manager - INFO - Connection logged: PC1 (b469215c1a6f)
+2026-06-16 21:38:08 - ui.controlled_ui - INFO - Connection added: PC1
+2026-06-16 21:39:46 - core.connection - ERROR - Receive error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-16 21:45:53 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 21:45:53 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 21:45:53 - __main__ - INFO - Starting controlled device...
+2026-06-16 21:45:53 - core.discovery - INFO - Device broadcast started
+2026-06-16 21:45:53 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 21:45:53 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 21:46:11 - core.connection - INFO - Connection accepted from ('192.168.8.170', 10437)
+2026-06-16 21:46:11 - __main__ - INFO - New connection from 192.168.8.170:10437
+2026-06-16 21:46:11 - database.db_manager - INFO - Connection logged: PC1 (b469215c1a6f)
+2026-06-16 21:46:11 - ui.controlled_ui - INFO - Connection added: PC1
+2026-06-16 21:46:11 - core.screen_capture - INFO - Screen capture started
+2026-06-16 21:46:14 - core.connection - ERROR - Receive error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-16 21:46:14 - core.connection - ERROR - Send failed: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-16 21:48:20 - __main__ - INFO - Controller Device initialized: PC1 (192.168.8.106)
+2026-06-16 21:48:20 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 21:48:20 - __main__ - INFO - Starting controller device...
+2026-06-16 21:48:20 - core.discovery - INFO - Device discovery started
+2026-06-16 21:48:27 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 21:48:32 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 21:48:37 - __main__ - DEBUG - Discovered 0 devices
+2026-06-16 21:50:05 - core.connection - INFO - Connection accepted from ('192.168.8.170', 10449)
+2026-06-16 21:50:05 - __main__ - INFO - New connection from 192.168.8.170:10449
+2026-06-16 21:50:05 - database.db_manager - INFO - Connection logged: PC1 (b469215c1a6f)
+2026-06-16 21:50:05 - ui.controlled_ui - INFO - Connection added: PC1
+2026-06-16 21:50:27 - core.connection - INFO - Connection accepted from ('192.168.8.170', 10451)
+2026-06-16 21:50:27 - __main__ - INFO - New connection from 192.168.8.170:10451
+2026-06-16 21:50:27 - database.db_manager - INFO - Connection logged: PC1 (b469215c1a6f)
+2026-06-16 21:50:27 - ui.controlled_ui - INFO - Connection added: PC1
+2026-06-16 21:53:40 - core.connection - INFO - Connection accepted from ('192.168.8.170', 10462)
+2026-06-16 21:53:40 - __main__ - INFO - New connection from 192.168.8.170:10462
+2026-06-16 21:53:41 - database.db_manager - INFO - Connection logged: PC1 (b469215c1a6f)
+2026-06-16 21:53:41 - ui.controlled_ui - INFO - Connection added: PC1
+2026-06-16 22:00:59 - core.connection - ERROR - Receive error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-16 22:00:59 - core.connection - ERROR - Receive error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-16 22:00:59 - core.connection - ERROR - Receive error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-16 22:01:27 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 22:01:27 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 22:01:27 - __main__ - INFO - Starting controlled device...
+2026-06-16 22:01:27 - core.discovery - INFO - Device broadcast started
+2026-06-16 22:01:27 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 22:01:27 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 22:01:44 - core.connection - INFO - Connection accepted from ('192.168.8.170', 10481)
+2026-06-16 22:01:44 - __main__ - INFO - New connection from 192.168.8.170:10481
+2026-06-16 22:01:44 - database.db_manager - INFO - Connection logged: PC1 (b469215c1a6f)
+2026-06-16 22:01:44 - ui.controlled_ui - INFO - Connection added: PC1
+2026-06-16 22:01:44 - core.screen_capture - INFO - Screen capture started
+2026-06-16 22:01:44 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:45 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:45 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:46 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:46 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:47 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:47 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:47 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:48 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:48 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:49 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:49 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:50 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:50 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:51 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:51 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:51 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:52 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:52 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:53 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:53 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:54 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:54 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:55 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:55 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:56 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:01:56 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:01 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:01 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:02 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:02 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:03 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:03 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:04 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:04 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:05 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:05 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:06 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:06 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:07 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:07 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:07 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:08 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:08 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:09 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:09 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:10 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:10 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:11 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:11 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:12 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:12 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:13 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:13 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:13 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:14 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:14 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:15 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:15 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:16 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:16 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:17 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:17 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:18 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:18 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:18 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:19 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:19 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:20 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:20 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:21 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:21 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:22 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:22 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:23 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:23 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:24 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:24 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:24 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:25 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:25 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:26 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:26 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:27 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:27 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:28 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:28 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:29 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:29 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:29 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:30 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:30 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:31 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:31 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:32 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:32 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:33 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:33 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:33 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:34 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:34 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:35 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:35 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:36 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:36 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:37 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:37 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:38 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:38 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:39 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:39 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:02:39 - __main__ - ERROR - Failed to send screen frame: 'P2PConnection' object has no attribute 'is_connected'
+2026-06-16 22:04:44 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 22:04:44 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 22:04:44 - __main__ - INFO - Starting controlled device...
+2026-06-16 22:04:44 - core.discovery - INFO - Device broadcast started
+2026-06-16 22:04:44 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 22:04:44 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 22:05:04 - core.connection - INFO - Connection accepted from ('192.168.8.170', 10488)
+2026-06-16 22:05:04 - __main__ - INFO - New connection from 192.168.8.170:10488
+2026-06-16 22:05:04 - database.db_manager - INFO - Connection logged: PC1 (b469215c1a6f)
+2026-06-16 22:05:04 - ui.controlled_ui - INFO - Connection added: PC1
+2026-06-16 22:05:04 - core.screen_capture - INFO - Screen capture started
+2026-06-16 22:05:20 - core.connection - INFO - Connection accepted from ('192.168.8.170', 10489)
+2026-06-16 22:05:20 - __main__ - INFO - New connection from 192.168.8.170:10489
+2026-06-16 22:05:21 - database.db_manager - INFO - Connection logged: PC1 (b469215c1a6f)
+2026-06-16 22:05:21 - ui.controlled_ui - INFO - Connection added: PC1
+2026-06-16 22:06:12 - core.connection - ERROR - Receive error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-16 22:06:12 - core.connection - ERROR - Receive error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-16 22:06:22 - core.connection - INFO - Connection accepted from ('192.168.8.170', 10490)
+2026-06-16 22:06:22 - __main__ - INFO - New connection from 192.168.8.170:10490
+2026-06-16 22:06:22 - database.db_manager - INFO - Connection logged: PC1 (b469215c1a6f)
+2026-06-16 22:06:22 - ui.controlled_ui - INFO - Connection added: PC1
+2026-06-16 22:06:35 - core.connection - INFO - Connection accepted from ('192.168.8.170', 10491)
+2026-06-16 22:06:35 - __main__ - INFO - New connection from 192.168.8.170:10491
+2026-06-16 22:06:35 - database.db_manager - INFO - Connection logged: PC1 (b469215c1a6f)
+2026-06-16 22:06:35 - ui.controlled_ui - INFO - Connection added: PC1
+2026-06-16 22:06:54 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 22:06:54 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 22:06:54 - __main__ - INFO - Starting controlled device...
+2026-06-16 22:06:54 - core.discovery - INFO - Device broadcast started
+2026-06-16 22:06:54 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 22:06:54 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 22:07:02 - core.connection - INFO - Connection accepted from ('192.168.8.170', 10492)
+2026-06-16 22:07:02 - __main__ - INFO - New connection from 192.168.8.170:10492
+2026-06-16 22:07:02 - database.db_manager - INFO - Connection logged: PC1 (b469215c1a6f)
+2026-06-16 22:07:02 - ui.controlled_ui - INFO - Connection added: PC1
+2026-06-16 22:07:02 - core.screen_capture - INFO - Screen capture started
+2026-06-16 22:09:21 - core.connection - ERROR - Send failed: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-16 22:09:21 - core.connection - ERROR - Receive error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-16 22:11:33 - core.connection - INFO - Connection accepted from ('192.168.8.170', 10539)
+2026-06-16 22:11:33 - __main__ - INFO - New connection from 192.168.8.170:10539
+2026-06-16 22:11:33 - database.db_manager - INFO - Connection logged: PC1 (b469215c1a6f)
+2026-06-16 22:11:33 - ui.controlled_ui - INFO - Connection added: PC1
+2026-06-16 22:11:50 - core.connection - ERROR - Receive error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-16 22:11:56 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 22:11:56 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 22:11:56 - __main__ - INFO - Starting controlled device...
+2026-06-16 22:11:56 - core.discovery - INFO - Device broadcast started
+2026-06-16 22:11:56 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 22:11:56 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 22:12:06 - core.connection - INFO - Connection accepted from ('192.168.8.170', 10544)
+2026-06-16 22:12:06 - __main__ - INFO - New connection from 192.168.8.170:10544
+2026-06-16 22:12:06 - database.db_manager - INFO - Connection logged: PC1 (b469215c1a6f)
+2026-06-16 22:12:06 - ui.controlled_ui - INFO - Connection added: PC1
+2026-06-16 22:12:06 - core.screen_capture - INFO - Screen capture started
+2026-06-16 22:26:49 - ui.controlled_ui - INFO - Stopping screen sharing...
+2026-06-16 22:26:57 - ui.controlled_ui - INFO - Stopping screen sharing...
+2026-06-16 22:26:59 - ui.controlled_ui - INFO - Stopping screen sharing...
+2026-06-16 22:32:10 - core.connection - ERROR - Receive error: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-06-16 22:47:02 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 22:47:02 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 22:47:02 - __main__ - INFO - Starting controlled device...
+2026-06-16 22:47:02 - core.discovery - INFO - Device broadcast started
+2026-06-16 22:47:02 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 22:47:02 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 22:48:14 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 22:48:14 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 22:48:14 - __main__ - INFO - Starting controlled device...
+2026-06-16 22:48:22 - core.discovery - ERROR - Global Registration Error: HTTPSConnectionPool(host='iron-signaling.onrender.com', port=443): Read timed out. (read timeout=5)
+2026-06-16 22:48:22 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 22:48:22 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 22:53:48 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 22:53:48 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 22:53:48 - __main__ - INFO - Starting controlled device...
+2026-06-16 22:53:52 - core.discovery - INFO - Registered on Global Signaling Server
+2026-06-16 22:53:52 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 22:53:52 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 22:54:07 - __main__ - INFO - Stopping server...
+2026-06-16 22:54:07 - __main__ - INFO - Discovery server stopped
+2026-06-16 22:56:01 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 22:56:01 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 22:56:01 - __main__ - INFO - Starting controlled device...
+2026-06-16 22:56:04 - core.discovery - INFO - Registered on Global Signaling Server
+2026-06-16 22:56:04 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 22:56:04 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 23:01:35 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 23:01:35 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 23:01:35 - __main__ - INFO - Starting controlled device...
+2026-06-16 23:01:35 - core.discovery - ERROR - Global Registration Error: HTTPSConnectionPool(host='iron-signaling.onrender.com', port=443): Max retries exceeded with url: /socket.io/?transport=polling&EIO=4&t=1781640095.2887838 (Caused by NameResolutionError("HTTPSConnection(host='iron-signaling.onrender.com', port=443): Failed to resolve 'iron-signaling.onrender.com' ([Errno 11001] getaddrinfo failed)"))
+2026-06-16 23:01:35 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 23:01:35 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 23:02:44 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 23:02:44 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 23:02:44 - __main__ - INFO - Starting controlled device...
+2026-06-16 23:02:48 - core.discovery - INFO - Registered on Global Signaling Server
+2026-06-16 23:02:48 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 23:02:48 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 23:21:24 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 23:21:24 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 23:21:24 - __main__ - INFO - Starting controlled device...
+2026-06-16 23:21:29 - core.discovery - INFO - Registered on Global Signaling Server
+2026-06-16 23:21:29 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 23:21:29 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 23:26:42 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 23:26:42 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 23:26:42 - __main__ - INFO - Starting controlled device...
+2026-06-16 23:26:45 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 23:26:45 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 23:48:36 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 23:48:36 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 23:48:36 - __main__ - INFO - Starting controlled device...
+2026-06-16 23:48:42 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 23:48:42 - __main__ - INFO - P2P server started on port 25557
+2026-06-16 23:56:11 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-16 23:56:11 - database.db_manager - INFO - Database initialized successfully
+2026-06-16 23:56:11 - __main__ - INFO - Starting controlled device...
+2026-06-16 23:56:23 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-16 23:56:23 - __main__ - INFO - P2P server started on port 25557

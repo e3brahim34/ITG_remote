@@ -1,0 +1,15 @@
+2026-06-17 00:00:34 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-17 00:00:34 - database.db_manager - INFO - Database initialized successfully
+2026-06-17 00:00:34 - __main__ - INFO - Starting controlled device...
+2026-06-17 00:00:36 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-17 00:00:36 - __main__ - INFO - P2P server started on port 25557
+2026-06-17 00:11:57 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-17 00:11:57 - database.db_manager - INFO - Database initialized successfully
+2026-06-17 00:11:57 - __main__ - INFO - Starting controlled device...
+2026-06-17 00:12:01 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-17 00:12:01 - __main__ - INFO - P2P server started on port 25557
+2026-06-17 00:12:49 - __main__ - INFO - Controlled Device initialized: PC1 (192.168.8.106)
+2026-06-17 00:12:49 - database.db_manager - INFO - Database initialized successfully
+2026-06-17 00:12:49 - __main__ - INFO - Starting controlled device...
+2026-06-17 00:12:52 - core.connection - INFO - Server created on 192.168.8.106:25557
+2026-06-17 00:12:52 - __main__ - INFO - P2P server started on port 25557

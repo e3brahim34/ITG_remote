@@ -1,7 +1,7 @@
 """Input control module for mouse and keyboard"""
 import pynput
-from pynput.mouse import Mouse, Button
-from pynput.keyboard import Keyboard, Key
+from pynput.mouse import Controller as MouseController, Button
+from pynput.keyboard import Controller as KeyboardController, Key
 from utils.logger import Logger
 
 logger = Logger(__name__)
@@ -11,8 +11,8 @@ class InputController:
     
     def __init__(self):
         """Initialize input controller"""
-        self.mouse = Mouse()
-        self.keyboard = Keyboard()
+        self.mouse = MouseController()      # بدلاً من Mouse()
+        self.keyboard = KeyboardController() # بدلاً من Keyboard()
     
     # ============= Mouse Control =============
     

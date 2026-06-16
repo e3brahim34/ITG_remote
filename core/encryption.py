@@ -2,7 +2,7 @@
 import os
 from cryptography.fernet import Fernet
 from cryptography.hazmat.primitives import hashes
-from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2
+from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 import base64
 
 class EncryptionManager:
@@ -31,7 +31,7 @@ class EncryptionManager:
             Derived key suitable for Fernet
         """
         salt = b'itg_remote_salt_'  # Fixed salt for consistency
-        kdf = PBKDF2(
+        kdf = PBKDF2HMAC(
             algorithm=hashes.SHA256(),
             length=32,
             salt=salt,
