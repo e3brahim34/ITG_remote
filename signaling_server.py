@@ -1,18 +1,22 @@
 """Global Signaling Server - يعمل على Render.com"""
-from flask import Flask, render_template, request
-from flask_socketio import SocketIO, emit, join_room, leave_room, rooms
+from flask import Flask, request
+from flask_socketio import SocketIO, emit, disconnect
 import json
 import time
 from datetime import datetime
 import os
+import logging
+
+# إعداد Logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'itg_remote_secret_key')
-# signaling_server.py
 socketio = SocketIO(
     app,
     cors_allowed_origins="*",
-    async_mode='threading',  # ✅ بدلاً من eventlet
+    async_mode='threading',  # استخدام threading بدل eventlet
     ping_timeout=60,
     ping_interval=25
 )
@@ -21,28 +25,27 @@ socketio = SocketIO(
 devices = {}
 connections_log = []
 
-print("[✓] Global Signaling Server Started")
-print(f"[ℹ] Environment: {os.environ.get('RENDER', 'Local')}")
+logger.info("🚀 Global Signaling Server Started")
 
 # ==================== Socket.IO Events ====================
 
 @socketio.on('connect')
 def handle_connect():
     """تعامل مع الاتصال الجديد"""
-    print(f"[✓] Client connected: {request.sid}")
+    logger.info(f"✓ Client connected: {request.sid}")
     emit('response', {'data': 'Connected to signaling server'})
 
 @socketio.on('disconnect')
 def handle_disconnect():
     """تعامل مع قطع الاتصال"""
-    print(f"[✗] Client disconnected: {request.sid}")
+    logger.info(f"✗ Client disconnected: {request.sid}")
     
     # إزالة الجهاز من القائمة
     for device_id in list(devices.keys()):
         if devices[device_id].get('session_id') == request.sid:
             del devices[device_id]
             emit('device_unregistered', {'device_id': device_id}, broadcast=True, skip_sid=request.sid)
-            print(f"[✗] Device unregistered: {device_id}")
+            logger.info(f"✗ Device unregistered: {device_id}")
 
 @socketio.on('register_device')
 def handle_register_device(data):
@@ -64,12 +67,12 @@ def handle_register_device(data):
             'session_id': request.sid,
             'remote_addr': request.remote_addr,
             'timestamp': datetime.now().isoformat(),
-            'public_ip': request.remote_addr,  # محاولة الحصول على IP العام
+            'public_ip': request.remote_addr,
         }
         
         devices[device_id] = device_info
         
-        print(f"[✓] Device registered: {device_name} ({device_id}) from {request.remote_addr}")
+        logger.info(f"✓ Device registered: {device_name} ({device_id}) from {request.remote_addr}")
         
         # إرسال إشعار لجميع الأجهزة
         emit('device_registered', {
@@ -86,7 +89,7 @@ def handle_register_device(data):
         })
         
     except Exception as e:
-        print(f"[!] Error registering device: {str(e)}")
+        logger.error(f"! Error registering device: {str(e)}")
         emit('error', {'message': str(e)})
 
 @socketio.on('get_devices')
@@ -99,9 +102,9 @@ def handle_get_devices():
             'count': len(devices_list),
             'timestamp': datetime.now().isoformat()
         })
-        print(f"[i] Device list requested: {len(devices_list)} devices online")
+        logger.info(f"i Device list requested: {len(devices_list)} devices online")
     except Exception as e:
-        print(f"[!] Error getting devices: {str(e)}")
+        logger.error(f"! Error getting devices: {str(e)}")
         emit('error', {'message': str(e)})
 
 @socketio.on('unregister_device')
@@ -114,7 +117,7 @@ def handle_unregister_device(data):
             device_name = devices[device_id].get('device_name')
             del devices[device_id]
             
-            print(f"[✗] Device unregistered: {device_name} ({device_id})")
+            logger.info(f"✗ Device unregistered: {device_name} ({device_id})")
             
             # إرسال إشعار
             emit('device_unregistered', {
@@ -129,7 +132,7 @@ def handle_unregister_device(data):
                 'timestamp': datetime.now().isoformat()
             })
     except Exception as e:
-        print(f"[!] Error unregistering device: {str(e)}")
+        logger.error(f"! Error unregistering device: {str(e)}")
         emit('error', {'message': str(e)})
 
 @socketio.on('heartbeat')
@@ -198,14 +201,13 @@ def internal_error(error):
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
-    print(f"\n🚀 Starting ITG Remote Signaling Server on port {port}")
-    print(f"📡 WebSocket: ws://localhost:{port}")
-    print(f"🌐 HTTP: http://localhost:{port}\n")
+    logger.info(f"🚀 Starting ITG Remote Signaling Server on port {port}")
+    logger.info(f"📡 WebSocket: ws://localhost:{port}")
+    logger.info(f"🌐 HTTP: http://localhost:{port}\n")
     
     socketio.run(
         app,
         host='0.0.0.0',
         port=port,
-        debug=False,
-        allow_unsafe_werkzeug=True  # للـ Production
+        debug=False
     )
