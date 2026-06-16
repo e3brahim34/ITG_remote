@@ -18,7 +18,7 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'itg_remote_secret_key')
 socketio = SocketIO(
     app,
     cors_allowed_origins="*",
-    async_mode='threading',  # استخدام threading بدل eventlet
+    async_mode='eventlet',  # قم بتغييرها من threading إلى eventlet
     ping_timeout=60,
     ping_interval=25
 )
