@@ -11,6 +11,5 @@ python-engineio==4.7.1
 flask==2.3.2
 flask-socketio==5.3.4
 python-dotenv==1.0.0
-sqlite3-python==1.0.0
 requests==2.31.0
 pyperclip==1.8.2
