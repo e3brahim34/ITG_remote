@@ -7,7 +7,6 @@ from datetime import datetime
 import logging
 from flask import Flask, request
 from flask_socketio import SocketIO, emit
-# ... بقية الكود الخاص بك
 
 # إعداد Logging
 logging.basicConfig(level=logging.INFO)
@@ -18,14 +17,21 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'itg_remote_secret_key')
 socketio = SocketIO(
     app,
     cors_allowed_origins="*",
-    async_mode='eventlet',  # قم بتغييرها من threading إلى eventlet
+    async_mode='eventlet',
     ping_timeout=60,
     ping_interval=25
 )
 
 # متخزن الأجهزة
 devices = {}
-connections_log = []
+
+def get_clean_ip():
+    """وظيفة لاستخراج الـ IP الحقيقي للمستخدم وتجاوز بروكسي Render"""
+    ip = request.headers.get('X-Forwarded-For', request.remote_addr)
+    if ip and ',' in ip:
+        # نأخذ أول عنوان فقط ونحذف أي مسافات
+        return ip.split(',')[0].strip()
+    return ip
 
 logger.info("🚀 Global Signaling Server Started")
 
@@ -33,44 +39,32 @@ logger.info("🚀 Global Signaling Server Started")
 
 @socketio.on('connect')
 def handle_connect():
-    """تعامل مع الاتصال الجديد"""
     logger.info(f"✓ Client connected: {request.sid}")
     emit('response', {'data': 'Connected to signaling server'})
 
 @socketio.on('disconnect')
 def handle_disconnect():
-    """تعامل مع قطع الاتصال"""
     logger.info(f"✗ Client disconnected: {request.sid}")
-    
-    # إزالة الجهاز من القائمة
     for device_id in list(devices.keys()):
         if devices[device_id].get('session_id') == request.sid:
             del devices[device_id]
-            emit('device_unregistered', {'device_id': device_id}, broadcast=True, skip_sid=request.sid)
+            emit('device_unregistered', {'device_id': device_id}, broadcast=True)
             logger.info(f"✗ Device unregistered: {device_id}")
-
 
 @socketio.on('register_device')
 def handle_register_device(data):
-    """تسجيل جهاز جديد مع تحديد الـ IP العام"""
     try:
-        # 1. استخراج البيانات من الطلب القادم
         device_id = data.get('device_id')
         device_name = data.get('device_name', 'Unknown Device')
         port = data.get('port', 25557)
         
         if not device_id:
-            logger.error("! Register error: Missing device_id")
             emit('error', {'message': 'device_id is required'})
             return
 
-        # 2. الحصول على الـ IP الحقيقي من Render
-        # Render يضع IP المستخدم في Header يسمى X-Forwarded-For
-        public_ip = request.headers.get('X-Forwarded-For', request.remote_addr)
-        if public_ip and ',' in public_ip:
-            public_ip = public_ip.split(',')[0].strip()
+        # تنظيف الـ IP قبل الحفظ
+        public_ip = get_clean_ip()
         
-        # 3. تجميع بيانات الجهاز
         device_info = {
             'device_id': device_id,
             'device_name': device_name,
@@ -80,12 +74,9 @@ def handle_register_device(data):
             'timestamp': datetime.now().isoformat()
         }
         
-        # 4. حفظ الجهاز في الذاكرة
         devices[device_id] = device_info
+        logger.info(f"✓ Device registered: {device_name} from IP: {public_ip}")
         
-        logger.info(f"✓ Device registered: {device_name} ({device_id}) from IP: {public_ip}")
-        
-        # 5. إرسال تأكيد للجهاز وإشعار للبقية
         emit('device_registered', {
             'device': device_info,
             'devices_online': len(devices)
@@ -93,134 +84,46 @@ def handle_register_device(data):
         
     except Exception as e:
         logger.error(f"! Error in register_device: {str(e)}")
-        emit('error', {'message': str(e)})
+
 @socketio.on('get_devices')
 def handle_get_devices():
-    """الحصول على قائمة الأجهزة المتاحة"""
-    try:
-        devices_list = list(devices.values())
-        emit('device_list', {
-            'devices': devices_list,
-            'count': len(devices_list),
-            'timestamp': datetime.now().isoformat()
-        })
-        logger.info(f"i Device list requested: {len(devices_list)} devices online")
-    except Exception as e:
-        logger.error(f"! Error getting devices: {str(e)}")
-        emit('error', {'message': str(e)})
-
-@socketio.on('unregister_device')
-def handle_unregister_device(data):
-    """إلغاء تسجيل جهاز"""
-    try:
-        device_id = data.get('device_id')
-        
-        if device_id in devices:
-            device_name = devices[device_id].get('device_name')
-            del devices[device_id]
-            
-            logger.info(f"✗ Device unregistered: {device_name} ({device_id})")
-            
-            # إرسال إشعار
-            emit('device_unregistered', {
-                'device_id': device_id,
-                'devices_online': len(devices)
-            }, broadcast=True)
-            
-            # تسجيل
-            connections_log.append({
-                'action': 'unregister',
-                'device_id': device_id,
-                'timestamp': datetime.now().isoformat()
-            })
-    except Exception as e:
-        logger.error(f"! Error unregistering device: {str(e)}")
-        emit('error', {'message': str(e)})
-
-@socketio.on('heartbeat')
-def handle_heartbeat(data):
-    """تحديث حالة الجهاز (Keep-Alive)"""
-    device_id = data.get('device_id')
-    if device_id in devices:
-        devices[device_id]['last_heartbeat'] = datetime.now().isoformat()
-        devices[device_id]['session_id'] = request.sid
-
-# ==================== REST API Endpoints ====================
-
-@app.route('/', methods=['GET'])
-def index():
-    """الصفحة الرئيسية"""
-    return {
-        'status': 'running',
-        'message': 'ITG Remote - Global Signaling Server',
-        'version': '1.0',
-        'devices_online': len(devices),
-        'timestamp': datetime.now().isoformat()
-    }, 200
-
-@app.route('/api/devices', methods=['GET'])
-def api_get_devices():
-    """الحصول على قائمة الأجهزة عبر REST"""
-    return {
+    emit('device_list', {
         'devices': list(devices.values()),
         'count': len(devices),
         'timestamp': datetime.now().isoformat()
-    }, 200
-
-@app.route('/api/devices/<device_id>', methods=['GET'])
-def api_get_device(device_id):
-    """الحصول على معلومات جهاز معين"""
-    if device_id in devices:
-        return {'device': devices[device_id]}, 200
-    return {'error': 'Device not found'}, 404
-
-@app.route('/api/status', methods=['GET'])
-def api_status():
-    """حالة السيرفر"""
-    return {
-        'status': 'running',
-        'devices_online': len(devices),
-        'timestamp': datetime.now().isoformat(),
-        'uptime': 'running'
-    }, 200
-
-@app.route('/health', methods=['GET'])
-def health():
-    """اختبار صحة السيرفر (لـ Render)"""
-    return {'status': 'healthy'}, 200
-
-# ==================== Error Handlers ====================
-
-@app.errorhandler(404)
-def not_found(error):
-    return {'error': 'Not found'}, 404
+    })
 
 @socketio.on('initiate_p2p')
 def handle_p2p(data):
+    """إرسال طلب P2P مع تنظيف الـ IP لضمان عمل الـ Hole Punching"""
     target_id = data.get('target_id')
     if target_id in devices:
-        # إرسال بيانات الحاكم للمحكوم لكي يفتح الثغرة (Hole Punching)
+        # تنظيف IP المرسل (الحاكم) قبل إرساله للمستقبل (المحكوم)
+        sender_ip = get_clean_ip()
+        
         emit('p2p_request', {
             'sender_id': data.get('sender_id'),
-            'sender_public_ip': request.headers.get('X-Forwarded-For', request.remote_addr),
+            'sender_public_ip': sender_ip, # هنا تم الإصلاح
             'sender_udp_port': data.get('udp_port')
         }, room=devices[target_id]['session_id'])
+        logger.info(f"P2P Signal forwarded from {sender_ip} to {target_id}")
 
-@app.errorhandler(500)
-def internal_error(error):
-    return {'error': 'Internal server error'}, 500
+# ==================== REST API & Health ====================
+
+@app.route('/')
+def index():
+    return {
+        'status': 'running',
+        'devices_online': len(devices),
+        'timestamp': datetime.now().isoformat()
+    }, 200
+
+@app.route('/health')
+def health():
+    return {'status': 'healthy'}, 200
 
 # ==================== Main ====================
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
-    logger.info(f"🚀 Starting ITG Remote Signaling Server on port {port}")
-    logger.info(f"📡 WebSocket: ws://localhost:{port}")
-    logger.info(f"🌐 HTTP: http://localhost:{port}\n")
-    
-    socketio.run(
-        app,
-        host='0.0.0.0',
-        port=port,
-        debug=False
-    )
+    socketio.run(app, host='0.0.0.0', port=port)
