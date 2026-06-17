@@ -195,6 +195,17 @@ def health():
 def not_found(error):
     return {'error': 'Not found'}, 404
 
+@socketio.on('initiate_p2p')
+def handle_p2p(data):
+    target_id = data.get('target_id')
+    if target_id in devices:
+        # إرسال بيانات الحاكم للمحكوم لكي يفتح الثغرة (Hole Punching)
+        emit('p2p_request', {
+            'sender_id': data.get('sender_id'),
+            'sender_public_ip': request.headers.get('X-Forwarded-For', request.remote_addr),
+            'sender_udp_port': data.get('udp_port')
+        }, room=devices[target_id]['session_id'])
+
 @app.errorhandler(500)
 def internal_error(error):
     return {'error': 'Internal server error'}, 500
